@@ -1,5 +1,10 @@
 Bootstrap: docker
 From: continuumio/anaconda3
 
-%post 
-    pip install bilby
+%post
+export PATH=/opt/conda/bin:${PATH}
+echo "Updating conda"
+conda update -y conda
+conda update --all
+echo "Installing latest bilby version"
+pip install bilby
