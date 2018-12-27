@@ -8,3 +8,7 @@ conda update -y conda
 conda update --all
 echo "Installing latest bilby version"
 pip install bilby
+
+%environment
+LD_LIBRARY_PATH=/MultiNest/lib
+export LD_LIBRARY_PATH
