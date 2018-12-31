@@ -2,6 +2,8 @@ Bootstrap: docker
 From: continuumio/anaconda3
 
 %post
+apt install -y gcc
+apt install -y libgl1-mesa-glx
 export PATH=/opt/conda/bin:${PATH}
 pip install --upgrade pip
 pip install future
