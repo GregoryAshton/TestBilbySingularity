@@ -1,10 +1,26 @@
-Bootstrap: shub
-From: lscsoft/bilby:0.3.3
+Bootstrap: docker
+From: continuumio/miniconda3
 
 %post
 export PATH=/opt/conda/bin:${PATH}
 pip install bilby_pipe==0.0.1
+pip install future
+pip install corner
+pip install numpy>=1.9
+pip install matplotlib>=2.0
+pip install scipy>=0.16
+pip install pandas
+pip install deepdish
+pip install mock
+pip install dynesty
+pip install nestle
+pip install ptemcee
+pip install emcee
+pip install cpnest
+pip install astropy
+pip install lalsuite
+pip install gwpy
+pip install theano
+pip install bilby
+pip install bilby_pipe
 
-%environment
-LD_LIBRARY_PATH=/MultiNest/lib
-export LD_LIBRARY_PATH
