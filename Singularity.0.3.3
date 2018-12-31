@@ -3,7 +3,7 @@ From: continuumio/miniconda3
 
 %post
 export PATH=/opt/conda/bin:${PATH}
-pip install bilby_pipe==0.0.1
+pip install --upgade pip
 pip install future
 pip install corner
 pip install numpy>=1.9
@@ -21,6 +21,5 @@ pip install astropy
 pip install lalsuite
 pip install gwpy
 pip install theano
-pip install bilby
-pip install bilby_pipe
-
+pip install bilby==0.3.3
+pip install bilby_pipe==0.0.1
