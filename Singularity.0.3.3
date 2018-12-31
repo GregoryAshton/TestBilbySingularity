@@ -1,13 +1,9 @@
-Bootstrap: docker
-From: bilbydev/test-suite-py3
+Bootstrap: shub
+From: lscsoft/bilby:0.3.3
 
 %post
 export PATH=/opt/conda/bin:${PATH}
-echo "Updating conda"
-conda update -y conda
-conda update --all
-echo "Installing latest bilby version"
-pip install bilby
+pip install bilby_pipe==0.0.1
 
 %environment
 LD_LIBRARY_PATH=/MultiNest/lib
