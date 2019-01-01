@@ -1,10 +1,11 @@
-Bootstrap: docker
-From: continuumio/anaconda3
+Bootstrap: shub
+From: singularityhub/ubuntu
 
 %post
 apt install -y gcc
 apt install -y libgl1-mesa-glx
-export PATH=/opt/conda/bin:${PATH}
+apt install -y python3
+apt install -y python3-pip
 pip install --upgrade pip
 pip install future
 pip install corner
