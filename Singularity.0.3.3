@@ -1,7 +1,9 @@
-Bootstrap: shub
-From: singularityhub/ubuntu
+Bootstrap: debootstrap
+OSVersion: xenial
+MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %post
+apt-get update
 apt install -y gcc
 apt install -y libgl1-mesa-glx
 apt install -y python3
