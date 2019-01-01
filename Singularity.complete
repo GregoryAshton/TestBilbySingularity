@@ -30,7 +30,7 @@ pip install lalsuite
 pip install urllib3
 pip install gwpy
 git clone https://git.ligo.org/lscsoft/bilby.git
-(cd bilby && python3 bilby/setup.py install)
+(cd bilby && python3 setup.py install)
 git clone https://github.com/lscsoft/bilby_pipe.git
-(cd bilby_pipe && python3 bilby_pipe/setup.py install)
+(cd bilby_pipe && python3 setup.py install)
 ln -s /usr/bin/python3 /usr/bin/python
