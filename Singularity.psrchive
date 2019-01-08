@@ -3,3 +3,4 @@ From: mpifrpsr/dspsr
 
 %post
     pip install pandas
+    pip install gwpy
