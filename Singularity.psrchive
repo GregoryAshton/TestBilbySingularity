@@ -1,6 +1,10 @@
 Bootstrap: docker
 From: mpifrpsr/dspsr
 
+%help
+
+A singularity container with psrchive, python-psrchive, and some useful python modules
+
 %post
     pip install pandas
     pip install gwpy
