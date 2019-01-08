@@ -1,7 +1,10 @@
-
 Bootstrap: debootstrap
 OSVersion: bionic
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
+
+%help
+
+A complete container for bilby and bilby_pipe as of 2018-01-08
 
 %post
 apt-get update && apt-get install -y --no-install-recommends apt-utils
